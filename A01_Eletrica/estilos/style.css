@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+}
+
+main {
+    background-image: linear-gradient(to bottom, white , rgb(234, 234, 234));
+}
+
+header {
+    text-align: center;
+    background-color: #211915;
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0px 1px 5px black;
+    font-size: .7em;
+}
+
+.header__logo {
+    padding-top: 1em;
+    width: 140px;
+    height: 40px;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.titulo {
+    margin: 2em 0 0em 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.titulo--contato {
+    margin: 2em 0 1em 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.resumo__historia {
+    text-align: justify;
+    text-indent: 2em;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.sobre__empresa--lista {
+    width: 100%;
+    list-style: "✔";
+    list-style-position: inside;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.sobre__empresa-item {
+    width: 100%;
+    text-align: justify;
+    padding: 2em 0 0;
+}
+
+
+.imagem__lista {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 9em);
+    grid-gap: .5em;
+    text-align: center;
+}
+
+.imagem__lista li {
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 5em 5em;
+    background-position: top .6em center;
+    padding-top: 6em;
+    transition: .25s;
+}
+
+
+.imagem__lista li:hover  {
+    transform: translate(0, .22rem);
+    background-color: rgba(128, 128, 128, 0.267);
+    transition: .25s;
+}
+
+.imagem--spda {
+    background-image: url("../image/servicos/lightning.png");
+}
+
+.imagem--laudo {
+    background-image: url("../image/servicos/report.png");
+}
+
+.imagem--projeto {
+    background-image: url("../image/servicos/Project.png");
+}
+
+.imagem--manutencao {
+    background-image: url("../image/servicos/Repair.png");
+}
+
+.imagem--solar {
+    background-image: url("../image/servicos/solar-panel.png");
+}
+
+.imagem--automacao {
+    background-image: url("../image/servicos/chip.png");
+}
+
+
+.imagem--seguranca-destaque {
+    background-image: url("../image/servicos/shield.png");
+    grid-column: span 2;
+}
+
+.contato--icone {
+    width: 2em;
+    height: 2em;
+    margin-right: .3em;
+}
+
+.resumo--contato {
+    text-align: justify;
+    text-indent: 2em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+.contato--box {
+    text-align: left;
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.contato--formulario {
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+.contato--formulario-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato--formulario-formulario label {
+    text-align: left;
+    margin-bottom: .2em;
+}
+
+.contato--formulario-formulario input {
+    height: 2em;
+    border: 0 none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    background-color: transparent;
+}
+
+.contato--formulario-formulario textarea {
+    border: 1px solid rgba(0, 0, 0, 0.305);
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    color: black;
+}
+
+.contato--btn {
+    font-weight: 900;
+    padding: .25em;
+    margin-bottom: 2em;
+    border-radius: 7px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.secao__rodape {
+    background-color: #211915;
+    color: yellow;
+    font-weight: 400;
+    font-size: .8em;
+    padding: .5em;
+}
+
+.rodape--copyright {
+    margin-top: 2.5em;
+    padding-bottom: 2em;
+}
+
+.rodape--copyright p {
+    padding-bottom: 1em;
+}
+
+.secao__rodape a{
+    color: white;
+}
+
+.contato--pss {
+    font-weight: 400;
+    text-align: left;
+    justify-content: space-evenly;
+    padding: 2em 0 12em 0;
+    max-height: 10em;
+}
+
+.pps--titulo {
+    border-bottom: 1px solid black;
+    padding: 1em 0 .5em 0;
+    font-weight: 900;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.pps--corporativo ul li {
+    padding-bottom: .8em;
+}
+
+.pps--corporativo, .pps--atendimento {
+    padding: 1em 0;
+    margin-bottom: auto;
+}
+
+.pps--atendimento p {
+    padding-bottom: .8em;
+}
+
+
+/* INICIO MEDIA QUERy */
+@media (max-width: 420px) {
+    .header__menu {
+        background-color: whitesmoke;
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .header__item-lista a{
+        display: inline-block;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .header__item-lista a:hover {
+        padding: 1.6em 1em .4em 1em;
+        vertical-align: middle;
+        transition: .25s;
+    }
+}
+
+@media (max-width: 666px) {
+    .header__menu {
+        background-color: whitesmoke;
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .header__item-lista a{
+        display: inline-block;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .header__item-lista a:hover {
+        padding: 1.6em 1em .4em 1em;
+        vertical-align: middle;
+        transition: .25s;
+    }
+}
+
+@media (min-width: 667px) {
+    .header__menu {
+        background-color: transparent;
+    }
+
+    .secao__cabecalho {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: .5em 0 0 0;
+        margin: 0 auto;
+    }
+    
+    .header__logo {
+        margin-left: 3em;
+        padding: 0;
+    }
+
+    .header__menu {
+        display: flex;
+        margin-right: 2em;
+    }
+
+    .header__menu li {
+        width: 6em;
+        padding: .8em;
+        margin-right: 1em;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+    }
+
+    .header__menu li:hover {
+        padding: 1.28em .8em .32em .8em;
+        vertical-align: middle;
+        transition: .25s;
+        border-bottom: 1px solid yellow;
+    }
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .contato--pss {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pps--corporativo, .pps--atendimento {
+        width: 40%;
+    }
+
+    .contato--pss {
+        font-weight: 400;
+        text-align: left;
+        justify-content: space-between;
+        padding-bottom: 3em;
+        max-height: 10em;
+    }
+}
+
+@media (min-width: 807px) {
+    .secao__cabecalho {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: .5em 0 0 0;
+        margin: 0 auto;
+    }
+    
+    .header__logo {
+        margin-left: 3em;
+        padding: 0;
+    }
+
+    .imagem__lista {
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 8em);
+        grid-gap: .5em;
+        text-align: center;
+    }
+    
+    .imagem__lista li {
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: 4em 4em;
+        background-position: top .6em center;
+        padding-top: 6em;
+        transition: .25s;
+    }
+
+    .contatos-contato-box {
+        width: 100%;
+    }
+
+    .contato--formulario {
+        width: 100%;
+        margin-top: .5em;
+        font-weight: 400;
+    }
+
+    img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .contato--pss {
+        font-weight: 400;
+        text-align: left;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 5em;
+        max-height: 10em;
+    }
+
+    .pps--corporativo, .pps--atendimento {
+        width: 45%;
+    }
+
+    .contato--all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 14em);
+        grid-gap: .5em;
+        padding: .5em;
+    }
+}
+
+
+/* 
+Primeiro site criado por mim com o intuito de comercializar o mesmo.
+
+Caso tenha vontade de construir um site, pode entrar em contato!
+
+Segue o link abaixo!
+
+https://www.instagram.com/myke.bu/ */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <title>A01 Elétrica</title>
+   <link rel="shortcut icon" href="image/favicon-16x16.png" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="estilos/reset.css">
+   <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+   <!-- inicio cabecalho -->
+   <header>
+      <div class="secao__cabecalho">
+         <!-- logo cabecalho -->
+         <a href="#servicos"><img class="header__logo" src="image/A01__LOGO-EXTENSO-MIDDLE.png" alt="logo da A01 Elétrica"></a>
+         <!-- menu cabecalho -->
+         <nav>
+            <ul class="header__menu">
+               <li class="header__item-lista" ><a href="#servicos">Serviços</a></li>
+               <li class="header__item-lista" ><a href="#sobre">Sobre nós</a></li>
+               <li class="header__item-lista" ><a href="#contato">Contato</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <!-- section principal -->
+      <section>
+         <!-- artigo serviços -->
+         <article class="secao__imagens">
+            <h1 id="servicos" class="titulo">Serviços</h2>
+            <ul class="imagem__lista">
+               <li class="imagem--spda">
+                  <a href="#contato">SPDA</a>
+               </li>
+               <li class="imagem--laudo">
+                  <a href="#contato">Laudos</a>
+               </li>
+               <li class="imagem--projeto">
+                  <a href="#contato">Projetos</a>
+               </li>
+               <li class="imagem--manutencao">
+                  <a href="#contato">Manutenção</a>
+               </li>
+               <li class="imagem--solar">
+                  <a href="#contato">Energia Solar</a>
+               </li>
+               <li class="imagem--automacao">
+                  <a href="#contato">Automação Geral</a>
+               </li>
+               <li class="imagem--seguranca-destaque">
+                  <a href="#contato">Segurança Eletrônica</a>
+               </li>
+            </ul>
+         </article>
+         <!-- fim do artigo serviços -->
+         <!-- artigo sobre a empresa -->
+         <article class="secao__sobre--empresa">
+            <h1 id="sobre" class="titulo" >Sobre a empresa</h1>
+            <img src="image/Team-bro--500px.png" alt="imagem sobre a empresa">
+            <p class="resumo__historia">
+               A A01 Elétrica começou em 2022 na cidade de Araraquara (SP), antes de se tornar um negócio, já era reconhecida pela qualidade e eficiência na prestação de serviços na área de elétrica. Visto a escassez de serviço de qualidade na região e a oportunidade de criar uma empresa, oficializou o início da então formada <a href="#">A01 Elétrica</a>.
+            </p>
+
+            <ul class="sobre__empresa--lista">
+               <li class="sobre__empresa-item">
+                  Garantir a prestação de serviço com qualidade, ética e responsabilidade, prezando a satisfação dos fornecedores, colaboradores e superando as expectativas dos nossos clientes.
+               </li>
+               <li class="sobre__empresa-item">
+                  Sobretudo garantir a qualidade na elaboração de projetos, na prestação de serviços e administração de obras.
+               </li>
+            </ul>
+         </article>    
+          <!-- fim do artigo sobre a empresa -->
+          <!-- artigo contato -->
+          <article class="secao__contato">
+            <h1 id="contato" class="titulo--contato titulo">Contato</h1>
+            <p class="resumo--contato">
+               Entre em contato através do nosso telefone, email, ou preencha o formulário com as suas dúvidas. Responderemos o mais rápido possível.
+            </p>
+            <div class="contato--all">
+               <div class="div--contato">
+                  <address class="contatos-contato-box">
+                     <div class="contato--box">
+                        <img class="contato--icone" src="image/address/whatsapp.png" alt="icone whatsapp">
+                        <a href="tel://1698203-9894">
+                           (16) 98203-9894
+                        </a>
+                     </div>
+                     <div class="contato--box"> 
+                        <img class="contato--icone" src="image/address/gmail.png" alt="icone gmail">
+                        <a href="mailto:a01eletrica@gmail.com">
+                           a01eletrica@gmail.com
+                        </a>
+                     </div>
+                     <div class="contato--box"> 
+                        <img class="contato--icone" src="image/address/instagram.png" alt="icone instagram">
+                        <a href="https://www.instagram.com/a01eletrica/">
+                           @a01eletrica
+                        </a>
+                     </div>
+                     <div class="contato--box">
+                        <img class="contato--icone" src="image/address/endereco.png" alt="icone pointer">
+                        <a href="https://goo.gl/maps/kdCARhpUBX59WBCW9" target="_blank">Av. Lázara Rodrigues Braga, 20 Pq. Gramado II</a>
+                     </div>
+                  </address>
+               </div>
+               <div  class="contato--formulario">
+
+                  <form class="contato--formulario-formulario" action="https://api.staticforms.xyz/submit" method="post">
+                     <input type="hidden" name="accessKey" value="ca53768c-6229-4dab-b037-0fabefdc1d3a">
+                     <label>Nome:</label>
+                     <input type="text" name="name" placeholder="Digite seu nome" required>
+                     <label>Telefone:</label>
+                     <input type="number" name="phone" placeholder="Digite seu telefone" required>
+                     <label>Email:</label>
+                     <input type="email" name="email" placeholder="Digite seu email" required>
+                     <label>Mensagem:</label>
+                     <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
+                     <button class="contato--btn" type="submit">Enviar</button>
+                     <input type="hidden" name="redirectTo" value="https://google.com">
+                  </form>
+               </div>
+
+               <div class="contato--pss">
+                  <div class="pps--corporativo">
+                     <h3 class="pps--titulo">Corporativo</h3>
+                     <ul>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                     </ul>
+                  </div>
+                  <div class="pps--atendimento">
+                     <h3 class="pps--titulo">Atendimento</h3>
+                     <p>Horário de atendimento</p>
+                     <span>Segunda à sexta das 08:00 às 18:00</span>
+                     <p>(exceto feriados)</p>
+                  </div>
+               </div>
+            </div>
+          </article>
+          <!-- fim do artigo contato -->
+      </section>
+   </main>
+   <footer class="secao__rodape">
+      <p>© 2022-2023 A01 Elétrica. Todos os direitos reservados.</p>
+      <br>
+      <a href="https://www.instagram.com/myke.bu/" target="_blank">Criado por: Myke Bueno</a>
+   </footer>
+</body>
+</html>
